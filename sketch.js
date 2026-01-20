@@ -97,7 +97,33 @@ console.log("2)", countries);
 
 ///////////////////////////////////////////////////////////////
 console.log("#################################################");
-console.log("Example 3");
+console.log("Exercise 1");
 console.log("#################################################");
 ///////////////////////////////////////////////////////////////
 // Exercise 1:
+
+let basket = ["apple", "banana", "orange", "pear"];
+
+// 1
+console.log("1)", basket[0]);
+console.log("1)", basket[basket.length - 1]);
+
+// 2
+basket.splice(1, 1, "kiwi");
+basket.pop();
+basket.unshift("mango");
+for (let i = 0; i < basket.length; i++) {
+  console.log("2)", basket[i]);
+}
+
+// 3
+
+console.log("3)", "orange found at index:", basket.indexOf("orange"));
+
+if (basket[3] != "orange") {
+  console.log("3)", "orange not found");
+}
+// 4
+
+citrus = basket.slice(1, 3);
+console.log("4)", citrus);
