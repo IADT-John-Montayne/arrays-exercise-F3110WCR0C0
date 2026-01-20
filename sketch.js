@@ -118,11 +118,12 @@ for (let i = 0; i < basket.length; i++) {
 
 // 3
 
-console.log("3)", "orange found at index:", basket.indexOf("orange"));
-
-if (basket[3] != "orange") {
+if ("orange" in basket) {
+  console.log("3)", "orange found at index:", basket.indexOf("orange"));
+} else {
   console.log("3)", "orange not found");
 }
+
 // 4
 
 if (basket.length % 2 == 0) {
