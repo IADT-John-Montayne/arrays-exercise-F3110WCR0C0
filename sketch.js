@@ -125,5 +125,10 @@ if (basket[3] != "orange") {
 }
 // 4
 
-citrus = basket.slice(1, 3);
-console.log("4)", citrus);
+if (basket.length % 2 == 0) {
+  citrus = basket.splice(basket.length / 2, basket.length / 2 + 1);
+  console.log("4)", citrus);
+} else if (basket.length % 2 !== 0) {
+  citrus = basket.splice(basket.length / 2);
+  console.log("4)", citrus);
+}
