@@ -124,6 +124,12 @@ if ("orange" in basket) {
   console.log("3)", "orange not found");
 }
 
+console.log("3)", "orange found at index:", basket.indexOf("orange"));
+
+if (basket[3] != "orange") {
+  console.log("3)", "orange not found");
+}
+
 // 4
 
 if (basket.length % 2 == 0) {
